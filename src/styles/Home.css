@@ -1,0 +1,134 @@
+.Home{
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    width: 100%;
+    height: 90vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.homeContainer{
+    width: auto;
+    margin-left: 50px;
+}
+
+.homeContainer h1{
+    justify-content: center;
+    align-items: center;
+    font-size: 90px;
+    height: 60px;
+    font-weight: 50;
+    color: black;
+}
+
+.homeContainer p{
+    padding: 0;
+    font-size: 40px;
+    font-weight: lighter;
+    color: black;
+}
+
+.homeContainer button{
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    justify-content: center;
+    background-color: #121619;
+    height: 50px;
+    width: 180px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.homeContainer button:hover {
+    background-color: #07090a;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+    color:tomato;
+}
+
+.hiddeContainer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.hiddenBox{
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 300px;
+    height: 180px;
+    background-color: #121619;
+    border-radius: 10px;
+   
+}
+
+
+
+.hiddenBox h1{
+    color: white;
+    font-size: 26px;
+}
+
+.hiddenBox p{
+    color: white;
+    font-size: 22px;
+}
+
+.hiddenBox button{
+    width: 150px;
+    height: 40px;
+    background-color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 8px;
+    
+}
+@media only screen and (min-width:601px){
+    .hiddeContainer{
+        display: none;
+    }
+  }
+
+  @media only screen and (max-width:600px){
+    .homeContainer{
+        display: none;
+    }
+}
+
+
+
+  @media only screen and (max-width:360px){
+    .hiddenBox{
+        width: 280px;
+        height: 160px;
+       
+    }
+    
+    .hiddenBox h1{
+        color: white;
+        font-size: 22px;
+    }
+    
+    .hiddenBox p{
+        color: white;
+        font-size: 20px;
+    }
+    .hiddenBox button{
+        width: 140px;
+        height: 40px;
+        
+    }
+    
+   
+}

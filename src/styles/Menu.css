@@ -1,0 +1,146 @@
+.menu {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .menuList {
+    width: 70vw;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+  }
+
+  .menu .listTitle {
+    font-family: cursive;
+    font-size: 60px;
+  }
+
+  .menuItem {
+    border-radius: 15px;
+    width: 300px;
+    height: 320px;
+    margin: 20px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  
+  }
+ .menuItem h2{
+    font-family: cursive;
+ }
+ .menuItem p{
+    font-size: 14px;
+    font-family:cursive;
+ }
+ 
+
+  .menuItem .itemList {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 100%;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .menuItem:hover {
+    font-size: 22px;
+    width: 320px;
+    height: 350px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
+    transition: 0.4s ease-in;
+    cursor: pointer;
+  }
+
+  .MenuBTN{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .MenuBTN button{
+    width: 140px;
+    height: 40px;
+    border: none;
+    background-color: #121619;
+    border-radius: 5px;
+    color: whitesmoke;
+    font-size: 15px;
+    cursor: pointer;
+    
+
+  }
+
+  @media only screen and (max-width:1300px){
+    .menuList{
+        grid-template-columns: 1fr 1fr;
+    }
+
+  }
+
+  @media only screen and (max-width: 900px){
+    .menu .listTitle {
+      font-size: 55px;
+    }
+    .menuList{
+        grid-template-columns: 1fr;
+    }
+    .menuItem{
+        width: 290px;
+        height: 310px;
+    }
+    .menuItem h2{
+      font-size: 22px;
+     }
+     .menuItem p{
+        font-size: 12px;
+     }
+     .menuItem:hover {
+        width: 300px;
+        height: 330px;
+      }
+  }
+  @media only screen and (max-width:600px){
+    .menu .listTitle {
+      font-size: 50px;
+    }
+    .menuItem{
+        width: 230px;
+        height: 300px;
+    }
+       .menuItem:hover {
+        width: 240px;
+        height: 310px;
+      }
+      .menuItem h2{
+        font-size: 20px;
+       }
+       .menuItem p{
+          font-size: 11px;
+       }
+  }
+
+  @media only screen and (max-width:360px){
+    .menu .listTitle {
+      font-size: 45px;
+    }
+    .menuItem{
+        width: 200px;
+        height: 280px;
+    }
+       .menuItem:hover {
+        width: 210px;
+        height: 290px;
+      }
+      .menuItem h2{
+        font-size: 18px;
+       }
+       .menuItem p{
+          font-size: 10dpx;
+       }
+  }
